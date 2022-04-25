@@ -1,6 +1,6 @@
 # wordcounter
 
-A demonstration how to count words of a file in the WebAssembly sandbox. Based on [wasi-preopens](https://github.com/voigt/zigwasm/wasi-preopens/).
+A demonstration how to count words of a file in the WebAssembly sandbox. Based on [wasi-preopens](https://github.com/voigt/zigwasm/tree/main/wasi-preopens).
 
 ## Usage
 
