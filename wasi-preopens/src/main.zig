@@ -12,9 +12,8 @@ pub fn main() !void {
 
     for (preopens.asSlice()) |preopen, i| {
         std.debug.print("{}: {}\n", .{ i, preopen });
+        try os.initPreopensWasi(allocator, preopen.type.Dir);
     }
-
-    try os.initPreopensWasi(allocator, ".");
 
     const args = try std.process.argsAlloc(allocator);
     defer std.process.argsFree(allocator, args);
